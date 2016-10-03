@@ -38,6 +38,7 @@ namespace MyTest
 
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
             Bootstrapper.Compose(pluginFolders);
             ControllerBuilder.Current.SetControllerFactory(new CustomControllerFactory());
             ViewEngines.Engines.Add(new CustomViewEngine(pluginFolders));
