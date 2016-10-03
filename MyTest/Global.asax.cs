@@ -18,13 +18,13 @@ namespace MyTest
     {
         protected void Application_Start()
         {
-            //AreaRegistration.RegisterAllAreas();
+            ////AreaRegistration.RegisterAllAreas();
 
             //WebApiConfig.Register(GlobalConfiguration.Configuration);
             //FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            //RouteConfig.RegisterRoutes(RouteTable.Routes);
-            //BundleConfig.RegisterBundles(BundleTable.Bundles);
-            //AuthConfig.RegisterAuth();
+            ////RouteConfig.RegisterRoutes(RouteTable.Routes);
+            ////BundleConfig.RegisterBundles(BundleTable.Bundles);
+            ////AuthConfig.RegisterAuth();
 
             var pluginFolders = new List<string>();
 
@@ -37,6 +37,8 @@ namespace MyTest
             });
 
             AreaRegistration.RegisterAllAreas();
+            WebApiConfig.Register(GlobalConfiguration.Configuration);
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             Bootstrapper.Compose(pluginFolders);
