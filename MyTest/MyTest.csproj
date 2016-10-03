@@ -181,6 +181,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Modules\MyPlugin\Controllers\TestController.cs" />
+    <Compile Include="Modules\MyPlugin\Models\TestModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -229,6 +230,7 @@
     <Content Include="Global.asax" />
     <Content Include="Modules\Web.config" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
+    <Content Include="readme.txt" />
     <Content Include="Scripts\jquery-3.1.0.js" />
     <Content Include="Scripts\jquery-3.1.0.min.js" />
     <Content Include="Scripts\jquery-3.1.0.slim.js" />

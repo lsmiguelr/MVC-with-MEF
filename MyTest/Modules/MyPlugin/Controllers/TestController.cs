@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyTest.Modules.MyPlugin.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace MyTest.Modules.MyPlugin.Controllers
 
         public ActionResult Index()
         {
+            ViewBag.TestModel = new TestModel() { Foo = "Hello Swami"};
             return View();
         }
 
